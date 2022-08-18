@@ -40,4 +40,8 @@ function capitalize(s: string, all = true) {
   return s === undefined || s[0] === undefined ? undefined : (all ? s.split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ') : s[0].toUpperCase() + s.substring(1))
 }
 
-export { shuffle, fetchJson, capitalize }
+function sleep(ms: number) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+export { shuffle, fetchJson, capitalize, sleep }

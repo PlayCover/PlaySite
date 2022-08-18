@@ -50,11 +50,32 @@ module.exports = {
             transform: 'translateY(0)',
           },
         },
+        'breath': {
+          '0%': {
+            opacity: '1',
+          },
+          '25%': {
+            opacity: '0.5',
+          },
+          '50%': {
+            opacity: '0.25',
+          },
+          '75%': {
+            opacity: '0',
+          },
+          '95%': {
+            opacity: '0.25',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        },
       },
       animation: {
         'hover-short': 'hover 8s infinite',
         'hover-medium': 'hover-opposite 12s infinite',
         'hover-long': 'hover 10s infinite',
+        'breath-long': 'breath 10s infinite',
       },
     },
   },
