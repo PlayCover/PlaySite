@@ -1,0 +1,173 @@
+---
+import NavBar from "../components/NavBar.vue";
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="flex flex-col antialiased transition-colors duration-500 min-h-screen bg-light dark:text-white dark:bg-dark">
+		<NavBar/>
+		<slot />
+	</body>
+</html>
+<style>
+	:root {
+		--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+		--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
+		--font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+
+		--color-text: hsl(12, 5%, 4%);
+		--color-bg: hsl(10, 21%, 95%);
+		--color-border: hsl(17, 24%, 90%);
+	}
+
+	body {
+    background: #F3F4F6;
+}
+
+body .dark {
+    background: #181818 !important;
+}
+
+/* Fonts */
+/* Thin */
+@font-face {
+    font-family: "Lufga";
+    font-style: normal;
+    font-weight: 200;
+    src: local('Lufga'), url(../assets/fonts/LufgaThin.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Lufga";
+    font-style: italic;
+    font-weight: 200;
+    src: local('Lufga'), url(../assets/fonts/LufgaThinItalic.ttf) format('truetype');
+}
+
+/* Light */
+@font-face {
+    font-family: "Lufga";
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lufga'), url(../assets/fonts/LufgaLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Lufga";
+    font-style: italic;
+    font-weight: 300;
+    src: local('Lufga'), url(../assets/fonts/LufgaLightItalic.ttf) format('truetype');
+}
+
+/* Regular */
+@font-face {
+    font-family: "Lufga";
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lufga'), url(../assets/fonts/LufgaRegular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Lufga";
+    font-style: italic;
+    font-weight: 400;
+    src: local('Lufga'), url(../assets/fonts/LufgaItalic.ttf) format('truetype');
+}
+
+/* Medium */
+@font-face {
+    font-family: "Lufga";
+    font-style: normal;
+    font-weight: 500;
+    src: local('Lufga'), url(../assets/fonts/LufgaMedium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Lufga";
+    font-style: italic;
+    font-weight: 500;
+    src: local('Lufga'), url(../assets/fonts/LufgaMediumItalic.ttf) format('truetype');
+}
+
+/* Semi-bold */
+@font-face {
+    font-family: "Lufga";
+    font-style: normal;
+    font-weight: 600;
+    src: local('Lufga'), url(../assets/fonts/LufgaSemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Lufga";
+    font-style: italic;
+    font-weight: 600;
+    src: local('Lufga'), url(../assets/fonts/LufgaSemiBoldItalic.ttf) format('truetype');
+}
+
+/* Bold */
+@font-face {
+    font-family: "Lufga";
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lufga'), url(../assets/fonts/LufgaBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Lufga";
+    font-style: italic;
+    font-weight: 700;
+    src: local('Lufga'), url(../assets/fonts/LufgaBoldItalic.ttf) format('truetype');
+}
+
+/* Extra-bold */
+@font-face {
+    font-family: "Lufga";
+    font-style: normal;
+    font-weight: 800;
+    src: local('Lufga'), url(../assets/fonts/LufgaExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Lufga";
+    font-style: italic;
+    font-weight: 800;
+    src: local('Lufga'), url(../assets/fonts/LufgaExtraBoldItalic.ttf) format('truetype');
+}
+
+/* Black */
+@font-face {
+    font-family: "Lufga";
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lufga'), url(../assets/fonts/LufgaBlack.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Lufga";
+    font-style: italic;
+    font-weight: 900;
+    src: local('Lufga'), url(../assets/fonts/LufgaBlackItalic.ttf) format('truetype');
+}
+
+/* Medium */
+
+@font-face {
+    font-family: "Itcavantgardestdmd";
+    font-style: normal;
+    font-weight: 400;
+    src: local('Itcavantgardestdmd'), url(../assets/fonts/ITCAvantGardeStdMd.otf) format('opentype');
+}
+</style>
