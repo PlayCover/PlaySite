@@ -46,4 +46,22 @@ const featuredGames = [
   },
 ]
 
-export default featuredGames
+const pages = [
+  {
+    name: 'Home', url: '/',
+  },
+  {
+    name: 'Team', url: '/team',
+  },
+  {
+    name: 'Changelog', url: '/changelog',
+  },
+  {
+    name: 'Docs', url: 'https://docs.playcover.io/',
+  },
+  {
+    name: 'Discord', url: 'https://discord.gg/PlayCover',
+  },
+]
+
+export { featuredGames, pages }

@@ -1,0 +1,14 @@
+---
+import Team from '../components/Team.vue';
+import Layout from '../layouts/Layout.astro';
+import {Suspense } from 'vue';
+---
+
+<Layout title="Playcover - Team">
+	<main class="flex-grow">
+		<Team client:load/>
+	</main>
+</Layout>
+
+<style>
+</style>

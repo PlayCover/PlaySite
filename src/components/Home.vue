@@ -1,7 +1,6 @@
 <script setup lang='ts'>
 import FeaturedGames from './featuredGames.vue'
 import Button from './Button.vue'
-import Background from './Background.vue'
 </script>
 
 <template>
@@ -9,7 +8,7 @@ import Background from './Background.vue'
     <div class="items-center justify-center mx-auto max-w-[1250px]">
       <div class="flex flex-col lg:flex-row justify-center relative">
         <div class="pb-10 xxs:pb-8 sm:pb-0">
-          <h1 class="font-lufga text-3xl sm:text-4xl lg:text-5xl font-semibold lg:w-3/5">
+          <h1 class="font-lufga text-4xl sm:text-5xl lg:text-6xl font-semibold lg:w-3/5">
             Run <span class="text-[#7587F5]">iOS</span> games and apps <span
               class="text-[#66D6D7]"
             >natively</span> on your Mac.
@@ -29,8 +28,6 @@ import Background from './Background.vue'
       </div>
     </div>
   </div>
-  <Background location="left" />
-  <Background location="right" />
 </template>
 
 <style>

@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/valid-attribute-name -->
 <script setup lang='ts'>
 import { onMounted, ref } from 'vue'
-import featuredGames from '../utils/statics'
+import { featuredGames } from '../utils/statics'
 import { shuffle } from '../utils/utils'
 const shuffledFeaturedGames = ref([...shuffle(featuredGames)])
 
