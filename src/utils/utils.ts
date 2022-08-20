@@ -43,5 +43,7 @@ function capitalize(s: string, all = true) {
 function sleep(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
-
-export { shuffle, fetchJson, capitalize, sleep }
+function filterContributorsData(contributors: any[]) {
+  return [...new Set(contributors.flat().map((contributor: any) => contributor.login))]
+}
+export { shuffle, fetchJson, capitalize, sleep, filterContributorsData }
