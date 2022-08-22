@@ -17,6 +17,6 @@
     "importsNotUsedAsValues": "error",
     "jsx": "preserve",
     "esModuleInterop": true
-  
+
   }
 }

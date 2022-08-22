@@ -1,6 +1,6 @@
 {
-  "name": "@example/basics",
-  "version": "0.0.1",
+  "name": "project-astrolabo",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -11,6 +11,11 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
+  "dependencies": {
+    "@heroicons/vue": "^1.0.6",
+    "@vueuse/core": "^9.1.0",
+    "marked": "^4.0.19"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.26.1",
     "@astrojs/mdx": "^0.10.0",
@@ -19,10 +24,5 @@
     "astro": "^1.0.6",
     "eslint": "^8.22.0",
     "vue": "^3.2.37"
-  },
-  "dependencies": {
-    "@heroicons/vue": "^1.0.6",
-    "@vueuse/core": "^9.1.0",
-    "marked": "^4.0.19"
   }
 }
