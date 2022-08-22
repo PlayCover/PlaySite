@@ -44,6 +44,12 @@ function sleep(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 function filterContributorsData(contributors: any[]) {
-  return [...new Set(contributors.flat().map((contributor: any) => contributor.login))]
+  return [...new Set(contributors.flat().map((contributor: any) => {
+    return {
+      username: contributor.login,
+      avatar: contributor.avatar_url,
+      url: contributor.html_url,
+    }
+  }))]
 }
 export { shuffle, fetchJson, capitalize, sleep, filterContributorsData }

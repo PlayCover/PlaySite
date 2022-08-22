@@ -20,7 +20,8 @@
     "vitejs",
     "Vitesse",
     "vitest",
-    "vueuse"
+    "vueuse",
+    "weblate"
   ],
   "prettier.enable": false,
   "editor.codeActionsOnSave": {
