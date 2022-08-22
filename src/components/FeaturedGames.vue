@@ -10,7 +10,7 @@ setInterval(() => {
 
 <template>
   <div
-    class=" ease-in relative mx-auto lg:absolute flex-[0_0_auto] max-w-[310px] xxs:max-w-[460px] w-[469px] left-auto lg:top-[-55%] h-[535px] right-[0] bottom-0"
+    class=" ease-in relative mx-auto lg:absolute flex-[0_0_auto] max-w-[310px] xxs:max-w-[460px] w-[469px] left-auto lg:top-[-40%] h-[535px] right-[0] bottom-0 "
   >
     <img
       :class="`breath-long shadow-2xl z-50 h-[82px] w-[82px] xxs:h-[100px] xxs:w-[100px] absolute left-[22px] top-[6%] xxs:left-[66px] xxs:top-[4%] right-auto bottom-auto animate-hover-short ${shuffledFeaturedGames[0].classes}`"
