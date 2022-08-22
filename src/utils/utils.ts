@@ -1,4 +1,4 @@
-function shuffle(array: any[]) {
+/* function shuffle(array: any[]) {
   let currentIndex = array.length; let randomIndex
 
   // While there remain elements to shuffle.
@@ -13,6 +13,10 @@ function shuffle(array: any[]) {
   }
 
   return array
+} */
+function shuffle(o: any[]) {
+  for (let j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+  return o
 }
 
 function fetchJson(url: string, success: any, fail: any, method = 'POST', log = false) {

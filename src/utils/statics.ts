@@ -10,13 +10,13 @@ const featuredGames = [
     classes: 'rounded-xl',
   },
   {
-    name: 'Apex Legends Mobile',
-    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/b0/ac/a6/b0aca646-5e61-a362-46a7-c0e21f76ceb3/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp',
+    name: 'Blue Archive',
+    link: 'https://is4-ssl.mzstatic.com/image/thumb/Purple112/v4/89/ec/a8/89eca87d-6e29-1b49-03cc-702c73aa19b5/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp',
     classes: 'rounded-xl',
   },
   {
-    name: 'Cookie Run Kingdom',
-    link: 'https://is2-ssl.mzstatic.com/image/thumb/Purple116/v4/0b/1b/34/0b1b341e-b897-30a1-f932-8b7df1d09f2b/AppIcon-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp',
+    name: 'Geometry Dash',
+    link: 'https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/b6/5d/7b/b65d7be5-e14a-433f-bb53-8cc2407e6199/AppIcon-1x_U007emarketing-85-220-9.png/460x0w.png',
     classes: 'rounded-xl',
   },
   {
@@ -30,13 +30,13 @@ const featuredGames = [
     classes: 'rounded-xl',
   },
   {
-    name: 'PUBG Mobile',
-    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/c7/4a/80/c74a801f-8301-13ee-90a9-0fcdb982673a/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-8.png/460x0w.webp',
+    name: 'Diablo Inmortal',
+    link: 'https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/5c/b1/2b/5cb12ba6-fed3-9477-e2aa-462a808e2536/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp',
     classes: 'rounded-[21%]',
   },
   {
-    name: 'Call of Duty Mobile',
-    link: 'https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/f7/db/58/f7db5888-a695-719a-3f73-c587a0c05c8f/AppIcon-1x_U007emarketing-0-9-0-85-220.png/460x0w.webp',
+    name: 'Mahjong Soul',
+    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/58/e1/f8/58e1f894-958a-e70e-c6fd-d22ab17c26d9/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp',
     classes: 'rounded-xl',
   },
   {

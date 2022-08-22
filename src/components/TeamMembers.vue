@@ -8,7 +8,7 @@ import ContributorsList from './ContributorsList.vue'
     <div class="mt-4 pb-8 mx-auto">
       <div>
         <h2 class="text-2xl mx-4 xl:mx-0 font-itcavantgardestdmd bg-clip-text text-transparent bg-gradient-to-r from-pc-g to-pc-b">
-          Contributors list
+          Contributors List
         </h2>
 
         <small class="font-itcavantgardestdmd">From PlayCover team we would like to thank to all of our contributors</small>
