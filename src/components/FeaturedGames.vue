@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/valid-attribute-name -->
 <script setup lang='ts'>
 import { onMounted, ref } from 'vue'
 import { featuredGames } from '../utils/statics'

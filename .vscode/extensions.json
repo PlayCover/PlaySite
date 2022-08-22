@@ -1,7 +1,8 @@
 {
   "recommendations": [
     "astro-build.astro-vscode",
-    "vue.volar"
+    "vue.volar",
+    "johnpapa.vscode-cloak"
   ],
   "unwantedRecommendations": []
 }
