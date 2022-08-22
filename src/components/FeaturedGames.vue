@@ -4,7 +4,7 @@ import { featuredGames } from '../utils/statics'
 import { shuffle } from '../utils/utils'
 const shuffledFeaturedGames = ref([...shuffle(featuredGames)])
 setInterval(() => {
-  shuffledFeaturedGames.value = [...shuffle(featuredGames)]
+  shuffledFeaturedGames.value = [...shuffle(shuffledFeaturedGames.value)]
 }, 10000)
 </script>
 
