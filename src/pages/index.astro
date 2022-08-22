@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Home from "../components/Home.vue";
-import Background from '../components/Background.vue';
+import FeaturedGames from '../components/FeaturedGames.vue';
 ---
 
 <Layout title="Playcover">
 	<main class="flex-grow">
-		<Home client:load/>
+		<Home>
+			<FeaturedGames client:load />
+		</Home>
 	</main>
 </Layout>
 

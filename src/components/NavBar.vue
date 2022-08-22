@@ -1,8 +1,20 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted } from 'vue'
 import { pages } from '../utils/statics'
 import logo from '../assets/logo.png'
 import Button from './Button.vue'
+
+onMounted(() => {
+  console.log(window.location.pathname)
+  document.querySelectorAll('.route').forEach((el) => {
+    const pathName = window.location.pathname
+    const element = (el as HTMLElement).innerText.toLowerCase()
+    if (element === pathName.split('/')[1] || (element === 'home' && pathName === '/')) {
+      console.log(window.location.pathname)
+      el.classList.add('underline', 'decoration-2', 'underline-offset-4', 'decoration-[#00BAAF]', 'text-[#00BAAF]')
+    }
+  })
+})
 </script>
 
 <template>
@@ -13,7 +25,7 @@ import Button from './Button.vue'
           <img :src="logo" class="h-12 w-12 rounded-xl" alt="PlayCover">
         </div>
         <div class="md:flex items-center space-x-10 font-itcavantgardestdmd font-medium">
-          <a v-for="route in pages" :key="route" :href="route.url" class="hover:text-[#00BAAF]">{{ route.name }}</a>
+          <a v-for="route in pages" :key="`url-${route.url}`" :href="route.url" class="hover:text-[#00BAAF] route">{{ route.name }}</a>
         </div>
       </div>
       <div class="md:flex items-center space-x-4">

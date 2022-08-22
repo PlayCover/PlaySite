@@ -20,7 +20,7 @@ const { title } = Astro.props as Props;
 	</head>
 	<body class="flex flex-col antialiased transition-colors duration-500 min-h-screen bg-light dark:text-white dark:bg-dark">
         <div class="flex-grow">
-            <NavBar/>
+            <NavBar client:only />
             <slot />
             <BackgroundGradient/>
         </div>

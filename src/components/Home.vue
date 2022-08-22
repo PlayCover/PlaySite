@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-import FeaturedGames from './featuredGames.vue'
 import Button from './Button.vue'
 </script>
 
@@ -24,7 +23,7 @@ import Button from './Button.vue'
             </a>
           </div>
         </div>
-        <FeaturedGames />
+        <slot />
       </div>
     </div>
   </div>
