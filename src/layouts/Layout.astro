@@ -1,5 +1,6 @@
 ---
 import BackgroundGradient from "../components/BackgroundGradient.vue";
+import Footer from "../components/Footer.astro";
 import NavBar from "../components/NavBar.vue";
 
 export interface Props {
@@ -27,6 +28,8 @@ const { title } = Astro.props as Props;
             <slot />
             <BackgroundGradient />
         </div>
+        <Footer />
+        
         <style>
             html {
                 scroll-behavior: smooth;
