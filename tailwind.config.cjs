@@ -20,22 +20,32 @@ module.exports = {
       keyframes: {
         'hover': {
           '0%': {
-            opacity: '1',
+            opacity: '0',
             transform: 'translateY(0px)',
+          },
+          '15%': {
+            opacity: '1',
+            transform: 'translateY(-5px)',
           },
           '50%': {
             opacity: '1',
             transform: 'translateY(-5px)',
           },
-          '100%': {
+          '75%': {
             opacity: '1',
+          },
+          '100%': {
+            opacity: '0',
             transform: 'translateY(0)',
           },
         },
         'hover-opposite': {
           '0%': {
-            opacity: '1',
+            opacity: '0',
             transform: 'translateY(0px)',
+          },
+          '15%': {
+            opacity: '1',
           },
           '40%': {
             opacity: '1',
@@ -46,36 +56,15 @@ module.exports = {
             transform: 'translateY(-6px)',
           },
           '100%': {
-            opacity: '1',
-            transform: 'translateY(0)',
-          },
-        },
-        'breath': {
-          '0%': {
-            opacity: '1',
-          },
-          '25%': {
-            opacity: '0.5',
-          },
-          '50%': {
-            opacity: '0.25',
-          },
-          '75%': {
             opacity: '0',
-          },
-          '95%': {
-            opacity: '0.25',
-          },
-          '100%': {
-            opacity: '1',
+            transform: 'translateY(0)',
           },
         },
       },
       animation: {
-        'hover-short': 'hover 6s infinite',
-        'hover-medium': 'hover-opposite 10s infinite',
-        'hover-long': 'hover 8s infinite',
-        'breath-long': 'breath 8s infinite',
+        'hover-short': 'hover 10s infinite ease-in-out',
+        'hover-medium': 'hover-opposite 10s infinite ease-in-out',
+        'hover-long': 'hover 10s infinite ease-in-out',
       },
     },
   },
