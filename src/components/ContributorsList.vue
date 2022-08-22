@@ -16,7 +16,7 @@ contributorsArray.value = contributorsArray.value.filter((obj, index, arr) => ar
   <ul>
     <li
       v-for="(contributor) in contributorsArray" :key="contributor"
-      class="my-8 font-lufga text-lg text-center truncate w-3/12"
+      class="my-8 font-lufga text-lg text-center truncate md:w-3/12 w-6/12"
       :class="contributor.username ? '' : 'hidden' "
     >
       <div class=" flex flex-col justify-start items-start w-fit">
