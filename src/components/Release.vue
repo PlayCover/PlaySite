@@ -61,7 +61,7 @@ ul>li {
   white-space: pre-wrap;
 }
 
-h2 {
+h2, h3 {
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.75rem;
