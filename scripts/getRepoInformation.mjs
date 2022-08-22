@@ -6,7 +6,7 @@ import fetch from 'node-fetch'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename).split('/scripts')[0]
 
-const DATA_FILE = join(__dirname, 'collection.json')
+const DATA_FILE = join(__dirname, 'orgContributors.json')
 const PROJECTS_TO_TRACK = ['PlayCover', 'PlaySite', 'PlayTools', 'PlayBook', 'Puck']
 // 'https://api.github.com/repos/PlayCover/PlayCover/contributors?anon=1
 const REPOS_PAGE = 'https://api.github.com/users/Playcover/repos'
@@ -39,6 +39,7 @@ const filterRepos = (data) => {
 (async () => {
   const collection = await getCollection()
   const repos = filterRepos(collection)
+
   // remove nulls from repos array
   const filteredReposData = repos.filter(Boolean)
   const repoContrinutors = await Promise.all(filteredReposData.map(async (r) => {
@@ -46,11 +47,12 @@ const filterRepos = (data) => {
     const contributors = await response.json()
     return contributors
   }))
-  // CHECK IF collection.json EXISTS ON PROJECT ROOT
-  if (!existsSync(join(__dirname, '/collection.json')))
-    writeFileSync('collection.json', '')
-  // console.log(repoContrinutors)
-  // WRITE DATA TO collection.json
+
+  // CHECK IF repoInformation.json EXISTS ON PROJECT ROOT
+  if (!existsSync(join(__dirname, '/orgContributors.json')))
+    writeFileSync('orgContributors.json', '')
+
+  // WRITE DATA TO repoInformation.json
   writeFileSync(DATA_FILE, JSON.stringify(repoContrinutors))
   console.log('Collection generated')
 })().catch(e => console.error(e))
