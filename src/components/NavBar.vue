@@ -15,7 +15,7 @@ onMounted(() => {
     const element = (el as HTMLElement).innerText.toLowerCase()
     if (element === pathName.split('/')[1] || (element === 'home' && pathName === '/')) {
       console.log('')
-      el.classList.add('underline', 'decoration-2', 'underline-offset-4', 'decoration-[#00BAAF]', 'text-[#00BAAF]')
+      el.classList.add('underline', 'decoration-2', 'underline-offset-8', 'decoration-[#00BAAF]', 'text-[#00BAAF]')
     }
   })
 })

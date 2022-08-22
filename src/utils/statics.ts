@@ -51,7 +51,7 @@ const pages = [
     name: 'Home', url: '/',
   },
   {
-    name: 'Team', url: '/team',
+    name: 'Contributors', url: '/contributors',
   },
   {
     name: 'Changelog', url: '/changelog',
