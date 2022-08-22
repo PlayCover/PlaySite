@@ -14,7 +14,7 @@ onMounted(() => {
     const pathName = window.location.pathname
     const element = (el as HTMLElement).innerText.toLowerCase()
     if (element === pathName.split('/')[1] || (element === 'home' && pathName === '/')) {
-      console.log('s')
+      console.log('')
       el.classList.add('underline', 'decoration-2', 'underline-offset-4', 'decoration-[#00BAAF]', 'text-[#00BAAF]')
     }
   })
@@ -26,7 +26,7 @@ onMounted(() => {
     <div class="flex items-center justify-between h-24 mx-4 xxl:mx-0">
       <div class="flex flex-shrink-0 items-center space-x-10">
         <div>
-          <img :src="logo" class="h-12 w-12 rounded-xl" alt="PlayCover">
+          <a href="/"><img :src="logo" class="h-12 w-12 rounded-xl" alt="PlayCover"></a>
         </div>
         <div class="hidden md:flex items-center space-x-10 font-itcavantgardestdmd font-medium">
           <a v-for="route in pages" :key="`url-${route.url}`" :href="route.url" class="hover:text-[#00BAAF] route">{{ route.name }}</a>
