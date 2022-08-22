@@ -19,7 +19,7 @@ contributorsArray.value = contributorsArray.value.filter((obj, index, arr) => ar
       class="my-8 font-lufga text-lg text-center truncate w-3/12"
       :class="contributor.username ? '' : 'hidden' "
     >
-      <div class=" flex flex-col justify-center items-center">
+      <div class=" flex flex-col justify-start items-start w-fit">
         <a :href="contributor.url" target="_blank" rel="noreferrer">
           <img
             v-if="contributor.username" :src="contributor.avatar" :title="contributor.username" :alt="contributor.username"
