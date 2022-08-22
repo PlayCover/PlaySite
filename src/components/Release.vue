@@ -25,7 +25,9 @@ const markdownHTML = marked.parse(props.release.body)
           />
         </svg>
       </div>
-      <div class="">
+      <div
+        style="word-break: break-word;"
+      >
         <div>
           <div class="flex items-center my-4">
             <img
