@@ -16,3 +16,8 @@ jobs:
       - run: npm install
       - run: node scripts/getReleasesInformation.mjs
       - run: node scripts/getRepoInformation.mjs
+      - run: |
+          git add orgContributors.json
+          git add releases.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "[:robot: BOT] Update orgContributors.json and releases.json"
+          git push origin main
