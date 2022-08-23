@@ -16,10 +16,10 @@ contributorsArray.value = contributorsArray.value.filter((obj, index, arr) => ar
   <ul>
     <li
       v-for="(contributor) in contributorsArray" :key="contributor"
-      class="my-8 font-lufga text-lg text-center truncate md:w-3/12 w-6/12 flex justify-center"
-      :class="contributor.username ? '' : 'hidden' "
+      class="my-8 font-lufga text-lg truncate md:w-3/12 w-6/12 flex justify-start"
+      :class="contributor.username || contributor.username === 'weblate' ? '' : 'hidden' "
     >
-      <div class=" flex flex-col justify-start items-start w-fit">
+      <div class=" flex flex-col justify-start items-start w-fit gap-1">
         <a :href="contributor.url" target="_blank" rel="noreferrer">
           <img
             v-if="contributor.username" :src="contributor.avatar" :title="contributor.username" :alt="contributor.username"
