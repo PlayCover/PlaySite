@@ -1,0 +1,34 @@
+{
+  "cSpell.words": [
+    "antfu",
+    "astro",
+    "astrojs",
+    "astrolabo",
+    "demi",
+    "EXVIUS",
+    "Genshin",
+    "heroicons",
+    "Honkai",
+    "iconify",
+    "intlify",
+    "itcavantgardestdmd",
+    "lufga",
+    "pinia",
+    "pnpm",
+    "PUBG",
+    "unocss",
+    "unplugin",
+    "Vite",
+    "vitejs",
+    "Vitesse",
+    "vitest",
+    "vueuse",
+    "weblate"
+  ],
+  "prettier.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": false,
+  "nuxt.isNuxtApp": false
+}
