@@ -6,6 +6,7 @@ import mdx from '@astrojs/mdx'
 export default defineConfig({
   integrations: [vue(), tailwind(), mdx()],
   site: 'https://playcover.github.io/Project-Astrolabos/',
+  base: '/Project-Astrolabos',
   vite: {
     optimizeDeps: {
       exclude: ['/scripts'],
