@@ -13,11 +13,12 @@ onMounted(() => {
   document.querySelectorAll('.route').forEach((el) => {
     const pathName = window.location.pathname
     const element = (el as HTMLElement).innerText.toLowerCase()
-    if ((element === pathName.split('/Project-Astrolabos/')[1].replace('/', ''))
-    || (element === 'home' && pathName.split('/')[1] === 'Project-Astrolabos')) {
-      console.log('')
+    if ((element === pathName.split('/Project-Astrolabos/')[1].replace('/', ''))) {
+      console.log(1)
       el.classList.add('underline', 'decoration-2', 'underline-offset-8', 'decoration-[#00BAAF]', 'text-[#00BAAF]')
     }
+    if (pathName === '/Project-Astrolabos/' && element === 'home')
+      el.classList.add('underline', 'decoration-2', 'underline-offset-8', 'decoration-[#00BAAF]', 'text-[#00BAAF]')
   })
 })
 </script>
