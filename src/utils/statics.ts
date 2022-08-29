@@ -48,13 +48,13 @@ const featuredGames = [
 
 const pages = [
   {
-    name: 'Home', url: '/',
+    name: 'Home', url: '/Project-Astrolabos/',
   },
   {
-    name: 'Contributors', url: '/contributors',
+    name: 'Contributors', url: '/Project-Astrolabos/contributors',
   },
   {
-    name: 'Changelog', url: '/changelog',
+    name: 'Changelog', url: '/Project-Astrolabos/changelog',
   },
   {
     name: 'Docs', url: 'https://docs.playcover.io/',
