@@ -13,7 +13,9 @@ onMounted(() => {
   document.querySelectorAll('.route').forEach((el) => {
     const pathName = window.location.pathname
     const element = (el as HTMLElement).innerText.toLowerCase()
-    if (element === pathName.split('/')[2] || (element === 'home' && pathName.split('/')[1] === 'Project-Astrolabos')) {
+    if (element === pathName.split('/')[2]
+    || (element === 'home' && pathName.split('/')[1] === 'Project-Astrolabos' && pathName.split('/')[2] === '')
+    ) {
       console.log('')
       el.classList.add('underline', 'decoration-2', 'underline-offset-8', 'decoration-[#00BAAF]', 'text-[#00BAAF]')
     }
