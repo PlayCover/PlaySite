@@ -7,9 +7,6 @@ module.exports = {
         xxs: '480px',
         xxl: '1400px',
       },
-      zIndex: {
-        'z-100': '100',
-      },
       colors: {
         'light': '#F3F4F6',
         'dark': '#181818',
