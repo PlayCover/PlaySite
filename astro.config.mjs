@@ -5,8 +5,7 @@ import mdx from '@astrojs/mdx'
 // https://astro.build/config
 export default defineConfig({
   integrations: [vue(), tailwind(), mdx()],
-  site: 'https://playcover.github.io',
-  base: '/Project-Astrolabos',
+  site: 'https://playcover.io/',
   vite: {
     optimizeDeps: {
       exclude: ['/scripts'],
