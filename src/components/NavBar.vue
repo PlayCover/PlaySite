@@ -13,11 +13,10 @@ onMounted(() => {
   document.querySelectorAll('.route').forEach((el) => {
     const pathName = window.location.pathname
     const element = (el as HTMLElement).innerText.toLowerCase()
-    if ((element === pathName.split('/Project-Astrolabos/')[1].replace('/', ''))) {
-      console.log(1)
+    if ((element === pathName.split('/')[1].replace('/', '')))
       el.classList.add('underline', 'decoration-2', 'underline-offset-8', 'decoration-[#00BAAF]', 'text-[#00BAAF]')
-    }
-    if (pathName === '/Project-Astrolabos/' && element === 'home')
+
+    if (pathName === '/' && element === 'home')
       el.classList.add('underline', 'decoration-2', 'underline-offset-8', 'decoration-[#00BAAF]', 'text-[#00BAAF]')
   })
 })
@@ -28,7 +27,7 @@ onMounted(() => {
     <div class="flex items-center justify-between h-24 mx-4 xxl:mx-0">
       <div class="flex flex-shrink-0 items-center space-x-10">
         <div>
-          <a href="/Project-Astrolabos/"><img :src="logo" class="h-12 w-12 rounded-xl" alt="PlayCover"></a>
+          <a href="/"><img :src="logo" class="h-12 w-12 rounded-xl" alt="PlayCover"></a>
         </div>
         <div class="hidden md:flex items-center space-x-10 font-itcavantgardestdmd font-medium">
           <a v-for="route in pages" :key="`url-${route.url}`" :href="route.url" class="hover:text-[#00BAAF] route">{{ route.name }}</a>
