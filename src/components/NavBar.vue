@@ -44,8 +44,8 @@ onMounted(() => {
         <MenuIcon class="cursor-pointer h-6 w-6" @click="toggleMobileNav" />
       </div>
     </div>
-    <div v-if="isMobileNavOpen" class="absolute md:hidden bg-light dark:bg-dark z-50 w-full border-b border-b-gray-400/20 dark:border-b-gray-200/5">
-      <div class="flex flex-col text-lg items-center font-itcavantgardestdmd font-medium space-y-4 pt-2 pb-10 absolute z-50">
+    <div v-if="isMobileNavOpen" class="absolute md:hidden bg-light dark:bg-dark z-50 w-full border-b border-b-gray-400/20 dark:border-b-gray-200/5 z-100">
+      <div class="flex flex-col text-lg items-center font-itcavantgardestdmd font-medium space-y-4 pt-2 pb-10">
         <a v-for="route in pages" :key="`url-${route.url}`" :href="route.url" class="-mb-0.5 border-b border-transparent hover:text-[#00BAAF] route">{{ route.name }}</a>
       </div>
     </div>
