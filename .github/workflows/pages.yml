@@ -4,7 +4,8 @@ on:
   # Activa el workflow cada vez que hay un push a la rama `main`
   # ¿Usas un nombre diferente a main? Reemplaza `main` con el nombre de tu rama
   push:
-    branches: [ main ]
+    branches:
+      - master
   # Te permite ejecutar este workflow manualmente desde la pestaña Actions en GitHub.
   workflow_dispatch:
   
