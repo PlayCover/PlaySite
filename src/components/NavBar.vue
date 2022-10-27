@@ -27,7 +27,7 @@ onMounted(() => {
     <div class="flex items-center justify-between h-24 mx-4 xxl:mx-0">
       <div class="flex flex-shrink-0 items-center space-x-10">
         <div>
-          <a href="/"><img :src="logo" class="h-12 w-12 rounded-xl" alt="PlayCover"></a>
+          <a href="/"><img :src="logo" class="h-14 w-14" alt="PlayCover"></a>
         </div>
         <div class="hidden md:flex items-center space-x-10 font-itcavantgardestdmd font-medium">
           <a v-for="route in pages" :key="`url-${route.url}`" :href="route.url" class="hover:text-[#00BAAF] route">{{ route.name }}</a>
