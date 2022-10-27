@@ -23,6 +23,7 @@ const getCollection = async () => {
 
 (async () => {
   const collection = await getCollection()
+  // Remove any null/invalid elements in the collection
   const releases = collection.filter(Boolean)
 
   // CHECK IF releases.json EXISTS ON PROJECT ROOT
