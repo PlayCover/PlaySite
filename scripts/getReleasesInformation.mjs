@@ -34,7 +34,7 @@ const filterReleases = (data) => {
 
 (async () => {
   const collection = await getCollection()
-  const releases = filterReleases(collection)
+  const releases = filterReleases(collection).filter(Boolean)
 
   // remove nulls from repos array
   // const filteredReposData = repos.filter(Boolean)
