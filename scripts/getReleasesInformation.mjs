@@ -21,10 +21,19 @@ const getCollection = async () => {
   return data
 }
 
+const filterReleases = (data) => {
+  return data.map((release) => {
+    // if repo.name is not in PROJECTS_TO_TRACK, skip it
+    if (release.draft)
+      return null
+    return release
+  })
+}
+
 (async () => {
   const collection = await getCollection()
   // Remove any null/invalid elements in the collection
-  const releases = collection.filter(Boolean)
+  const releases = filterReleases(collection).filter(Boolean)
 
   // CHECK IF releases.json EXISTS ON PROJECT ROOT
   if (!existsSync(join(__dirname, '/releases.json')))
