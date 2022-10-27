@@ -21,20 +21,9 @@ const getCollection = async () => {
   return data
 }
 
-const filterReleases = (data) => {
-  return data.map((release) => {
-    // if repo.name is not in PROJECTS_TO_TRACK, skip it
-    if (release.prerelease)
-      return null
-    if (release.draft)
-      return null
-    return release
-  })
-}
-
 (async () => {
   const collection = await getCollection()
-  const releases = filterReleases(collection).filter(Boolean)
+  const releases = collection.filter(Boolean)
 
   // remove nulls from repos array
   // const filteredReposData = repos.filter(Boolean)
