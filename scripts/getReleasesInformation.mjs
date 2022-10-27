@@ -24,8 +24,6 @@ const getCollection = async () => {
 const filterReleases = (data) => {
   return data.map((release) => {
     // if repo.name is not in PROJECTS_TO_TRACK, skip it
-    if (release.prerelease)
-      return null
     if (release.draft)
       return null
     return release
@@ -34,21 +32,14 @@ const filterReleases = (data) => {
 
 (async () => {
   const collection = await getCollection()
-  const releases = filterReleases(collection)
+  // Remove any null/invalid elements in the collection
+  const releases = filterReleases(collection).filter(Boolean)
 
-  // remove nulls from repos array
-  // const filteredReposData = repos.filter(Boolean)
-  // const repoContrinutors = await Promise.all(filteredReposData.map(async (r) => {
-  //   const response = await fetch(`https://api.github.com/repos/PlayCover/${r.name}/contributors?anon=1`)
-  //   const contributors = await response.json()
-  //   return contributors
-  // }))
-
-  // CHECK IF repoInformation.json EXISTS ON PROJECT ROOT
+  // CHECK IF releases.json EXISTS ON PROJECT ROOT
   if (!existsSync(join(__dirname, '/releases.json')))
     writeFileSync('releases.json', '')
 
-  // WRITE DATA TO repoInformation.json
+  // WRITE DATA TO releases.json
   writeFileSync(DATA_FILE, JSON.stringify(releases))
   console.log('Collection generated')
 })().catch(e => console.error(e))
