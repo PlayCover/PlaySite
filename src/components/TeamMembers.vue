@@ -4,7 +4,7 @@ import ContributorsList from './ContributorsList.vue'
 </script>
 
 <template>
-  <div class=" max-w-7xl mx-auto ">
+  <div class=" max-w-7xl mx-auto relative z-10">
     <div class="mt-4 pb-8 mx-auto">
       <div>
         <h2 class="text-2xl mx-4 xl:mx-0 font-itcavantgardestdmd bg-clip-text text-transparent bg-gradient-to-r from-pc-g to-pc-b">
