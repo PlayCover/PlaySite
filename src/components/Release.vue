@@ -65,22 +65,19 @@ ul>li {
 }
 
 h2 {
-  line-height: 1.75rem;
-  padding-bottom: 0.75rem;
-  padding-top: 0.75rem;
   font-size: x-large;
   font-weight: bold;
-  text-decoration: underline;
-  text-decoration-thickness: 0.05rem;
-  text-underline-offset: 0.4rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 h3 {
   font-size: large;
   font-weight: bold;
-  line-height: 2rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  line-height: 1.75rem;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
 }
 
 p {
