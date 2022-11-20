@@ -8,11 +8,12 @@ import Button from './Button.vue'
 const props = defineProps<{
   release: Release
 }>()
-const markdownHTML = marked.parse(props.release.body)
+const markdown = props.release.body.replace(/(@\S*)/g, "**$1**");
+const markdownHTML = marked.parse(markdown)
 </script>
 
 <template>
-  <li class="flex-wrap flex-col overflow-hidden pl-2">
+  <li class="flex-wrap flex-col overflow-hidden pl-2 list-none">
     <div class="flex space-x-10 px-4 lg:px-6 xxl:px-0">
       <div class="-mb-[14px] mt-[60px] border-l-2 min-h-fit border-gray-300 dark:border-gray-600/40">
         <svg
@@ -56,16 +57,24 @@ const markdownHTML = marked.parse(props.release.body)
 
 <style>
 li {
-  list-style: none;
+  list-style: disc inside;
 }
 
 ul>li {
   white-space: pre-wrap;
 }
 
-h2, h3 {
-  font-weight: 600;
-  font-size: 1.125rem;
+h2 {
+  font-size: x-large;
+  font-weight: bold;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+h3 {
+  font-size: large;
+  font-weight: bold;
   line-height: 1.75rem;
   padding-bottom: 0.75rem;
   padding-top: 0.75rem;
