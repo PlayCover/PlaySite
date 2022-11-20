@@ -34,7 +34,7 @@ onMounted(() => {
         </div>
       </div>
       <div class="hidden md:flex items-center space-x-4">
-        <a href="https://github.com/PlayCover/PlayCover/releases/latest">
+        <a href="https://github.com/PlayCover/PlayCover/releases">
           <Button size="lg">
             Download
           </Button>
