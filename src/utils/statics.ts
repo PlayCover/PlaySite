@@ -60,7 +60,7 @@ const pages = [
     name: 'Docs', url: 'https://docs.playcover.io/',
   },
   {
-    name: 'Discord', url: 'https://discord.gg/PlayCover',
+    name: 'Discord', url: 'https://discord.gg/RNCHsQHr3S',
   },
 ]
 
