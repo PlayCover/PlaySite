@@ -44,24 +44,34 @@ const featuredGames = [
     link: 'https://is5-ssl.mzstatic.com/image/thumb/Purple112/v4/31/44/7b/31447b8b-6489-354b-e0db-34c957d50019/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp',
     classes: 'rounded-xl',
   },
-]
+];
 
 const pages = [
   {
-    name: 'Home', url: '/',
+    name: 'Home',
+    url: '/',
+    openInNewTab: false,
   },
   {
-    name: 'Contributors', url: '/contributors',
+    name: 'Contributors',
+    url: '/contributors',
+    openInNewTab: false,
   },
   {
-    name: 'Changelog', url: '/changelog',
+    name: 'Changelog',
+    url: '/changelog',
+    openInNewTab: false,
   },
   {
-    name: 'Docs', url: 'https://docs.playcover.io/',
+    name: 'Docs',
+    url: 'https://docs.playcover.io/',
+    openInNewTab: true,
   },
   {
-    name: 'Discord', url: 'https://discord.gg/RNCHsQHr3S',
+    name: 'Discord',
+    url: 'https://discord.gg/RNCHsQHr3S',
+    openInNewTab: true,
   },
-]
+];
 
-export { featuredGames, pages }
+export { featuredGames, pages };
