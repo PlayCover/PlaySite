@@ -3,7 +3,7 @@ import type { Ref } from 'vue'
 import { ref } from 'vue'
 import { filterContributorsData } from '../utils/utils'
 const contributorsArray: Ref<any> = ref(null)
-contributorsArray.value = await fetch('orgContributors.json').then(response =>
+contributorsArray.value = await fetch('https://raw.githubusercontent.com/PlayCover/PlaySite/master/orgContributors.json').then(response =>
   response.json(),
 ).then(data => data)
 contributorsArray.value = filterContributorsData(contributorsArray.value).filter(contributor => contributor.username != null || contributor.username !== 'weblate')
