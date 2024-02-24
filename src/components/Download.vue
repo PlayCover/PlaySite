@@ -30,7 +30,7 @@ releasesArray.value = await fetch('https://raw.githubusercontent.com/PlayCover/P
               <span class="text-[#bbb] text-[14px]">{{ releasesArray[0].name }}</span>
             </Button>
           </a>
-          <a href="https://github.com/PlayCover/PlayCover/actions">
+          <a href="https://nightly.link/playcover/playcover/workflows/2.nightly_release/develop?status=completed">
             <Button class="py-1 px-5 text-[24px] w-auto" size="lg">
               Nightly
             </Button>
