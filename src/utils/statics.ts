@@ -72,6 +72,11 @@ const pages = [
     url: 'https://discord.gg/RNCHsQHr3S',
     openInNewTab: true,
   },
+  {
+    name: 'GitHub',
+    url: 'https://github.com/PlayCover/PlayCover',
+    openInNewTab: true,
+  },
 ];
 
 export { featuredGames, pages };
