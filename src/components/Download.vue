@@ -13,7 +13,7 @@ releasesArray.value = await fetch('https://raw.githubusercontent.com/PlayCover/P
     <div class="items-center justify-center mx-auto max-w-[1250px]">
       <div class="flex md:flex-col flex-col-reverse lg:flex-row justify-center relative">
         <div class="">
-          <p class="font-lufga text-4xl mt-8 sm:text-5xl lg:text-6xl font-semibold lg:w-[50%] md:mt-0">
+          <p class="font-lufga text-4xl mt-8 sm:text-5xl lg:text-6xl font-semibold lg:w-[75%] md:mt-0">
             Choose the version of <span class="text-[#7587F5]">PlayCover</span>
             you would like to
             <span class="text-[#66D6D7]">download</span>.
