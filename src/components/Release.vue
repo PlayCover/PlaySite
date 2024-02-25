@@ -32,6 +32,7 @@ const markdownHTML = marked.parse(markdown)
         <div>
           <div class="flex items-center my-4">
             <img
+              v-if="props.release.author"
               :src="props.release.author.avatar_url" :alt="props.release.author.login"
               :title="props.release.author.login" class="border-2 rounded-full mt-1 h-8 w-8"
             >
