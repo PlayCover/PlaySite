@@ -43,10 +43,15 @@ const markdownHTML = marked.parse(markdown)
             }}</span>
           </div>
           <div v-html="markdownHTML" />
-          <div class="pt-5 pb-1.5">
+          <div class="pt-5 pb-1.5 flex flex-row gap-3">
             <a :href="props.release.html_url" target="_blank" rel="noreferrer">
               <Button size="sm">
                 Read more
+              </Button>
+            </a>
+            <a :href="props.release.assets[0].browser_download_url" target="_blank" rel="noreferrer">
+              <Button size="sm">
+                Download
               </Button>
             </a>
           </div>
