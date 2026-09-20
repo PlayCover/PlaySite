@@ -60,7 +60,7 @@ const pages = [
   },
   {
     name: 'Discord',
-    url: 'https://discord.gg/RNCHsQHr3S',
+    url: 'https://discord.com/invite/playcover-871829896492642387',
     openInNewTab: true,
   },
   {
