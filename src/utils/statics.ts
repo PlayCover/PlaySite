@@ -68,6 +68,11 @@ const pages = [
     url: 'https://github.com/PlayCover/PlayCover',
     openInNewTab: true,
   },
+  {
+    name: '简体中文',
+    url: 'https://www.playcover.com.cn',
+    openInNewTab: true,
+  },
 ];
 
 export { featuredGames, pages };
