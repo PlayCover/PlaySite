@@ -27,7 +27,7 @@
     "vue": "^3.5.43"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.7.3",
+    "@antfu/eslint-config": "^9.5.1",
     "@astrojs/check": "^0.9.10",
     "astro-eslint-parser": "^3.2.0",
     "eslint": "^10.12.0",
