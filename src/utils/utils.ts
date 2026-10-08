@@ -56,4 +56,4 @@ function filterContributorsData(contributors: any[]) {
     }
   }))]
 }
-export { shuffle, fetchJson, capitalize, sleep, filterContributorsData }
+export { capitalize, fetchJson, filterContributorsData, shuffle, sleep }

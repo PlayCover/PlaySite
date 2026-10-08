@@ -1,7 +1,8 @@
 <script setup lang='ts'>
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import { featuredGames } from '../utils/statics'
 import { shuffle } from '../utils/utils'
+
 const shuffledFeaturedGames = ref([...shuffle(featuredGames)])
 setInterval(() => {
   shuffledFeaturedGames.value = [...new Set([...shuffle(shuffledFeaturedGames.value)])]

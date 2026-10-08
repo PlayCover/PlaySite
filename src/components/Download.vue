@@ -1,11 +1,9 @@
 <script setup lang='ts'>
-import { type Ref, ref } from 'vue'
+import type { Release } from '../../interfaces/Release'
+import releases from '../../releases.json'
 import Button from './Button.vue'
 
-const releasesArray: Ref<any> = ref(null)
-releasesArray.value = await fetch('https://raw.githubusercontent.com/PlayCover/PlaySite/master/releases.json').then(response =>
-  response.json(),
-).then(data => data)
+const releasesArray = releases as unknown as Release[]
 </script>
 
 <template>

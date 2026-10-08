@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-import { ref } from 'vue'
 import ContributorsList from './ContributorsList.vue'
 </script>
 
@@ -12,7 +11,7 @@ import ContributorsList from './ContributorsList.vue'
         </h2>
 
         <small class="font-itcavantgardestdmd">From PlayCover team we would like to thank to all of our contributors</small>
-        <ContributorsList class="flex flex-wrap flex-grow basis-1/4 w-5/5 mt-8 justify-start" />
+        <ContributorsList class="flex flex-wrap grow basis-1/4 w-5/5 mt-8 justify-start" />
       </div>
     </div>
   </div>

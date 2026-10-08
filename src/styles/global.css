@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+/* Reuse the existing theme (colors, fonts, keyframes, screens) from the JS config. */
+@config '../../tailwind.config.mjs';
+
+/*
+  Tailwind v4 changed the default border color from gray-200 to currentColor.
+  Keep the v3 look for borders that don't set a color explicitly.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}

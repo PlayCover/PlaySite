@@ -35,7 +35,7 @@ const featuredGames = [
     name: 'Rocket League Sideswipe',
     link: 'https://is5-ssl.mzstatic.com/image/thumb/Purple112/v4/31/44/7b/31447b8b-6489-354b-e0db-34c957d50019/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp',
   },
-];
+]
 
 const pages = [
   {
@@ -68,6 +68,6 @@ const pages = [
     url: 'https://github.com/PlayCover/PlayCover',
     openInNewTab: true,
   },
-];
+]
 
-export { featuredGames, pages };
+export { featuredGames, pages }

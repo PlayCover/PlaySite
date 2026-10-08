@@ -1,5 +1,5 @@
 {
-  "name": "project-astrolabo",
+  "name": "playsite",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,20 +9,29 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "check": "astro check"
   },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "type": "module",
   "dependencies": {
-    "@heroicons/vue": "^1.0.6",
-    "@vueuse/core": "^9.1.0",
-    "marked": "^4.0.19"
+    "@astrojs/mdx": "^8.0.3",
+    "@astrojs/vue": "^7.0.3",
+    "@heroicons/vue": "^2.2.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.7",
+    "marked": "^18.1.0",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.43"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.26.1",
-    "@astrojs/mdx": "^0.10.0",
-    "@astrojs/tailwind": "^1.0.0",
-    "@astrojs/vue": "^1.0.0",
-    "astro": "^1.0.6",
-    "eslint": "^8.22.0",
-    "vue": "^3.2.37"
+    "@antfu/eslint-config": "^7.7.3",
+    "@astrojs/check": "^0.9.10",
+    "astro-eslint-parser": "^3.2.0",
+    "eslint": "^10.12.0",
+    "eslint-plugin-astro": "^3.2.1",
+    "typescript": "^6.0.3"
   }
 }

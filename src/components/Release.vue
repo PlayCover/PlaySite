@@ -1,15 +1,13 @@
 <script setup lang='ts'>
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import { marked } from 'marked'
 import type { Release } from '../../interfaces/Release'
+import { marked } from 'marked'
 import Button from './Button.vue'
 
 const props = defineProps<{
   release: Release
 }>()
-const markdown = props.release.body.replace(/(@\S*)/g, "**$1**");
-const markdownHTML = marked.parse(markdown)
+const markdown = (props.release.body ?? '').replace(/(@\S*)/g, '**$1**')
+const markdownHTML = marked.parse(markdown, { async: false })
 </script>
 
 <template>
@@ -62,37 +60,40 @@ const markdownHTML = marked.parse(markdown)
 </template>
 
 <style>
-li {
-  list-style: disc inside;
-}
+/* Tailwind v4 puts utilities in cascade layers; keep these in the base layer so classes like list-none still win. */
+@layer base {
+  li {
+    list-style: disc inside;
+  }
 
-ul>li {
-  white-space: pre-wrap;
-}
+  ul>li {
+    white-space: pre-wrap;
+  }
 
-h2 {
-  font-size: x-large;
-  font-weight: bold;
-  line-height: 2rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
+  h2 {
+    font-size: x-large;
+    font-weight: bold;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
 
-h3 {
-  font-size: large;
-  font-weight: bold;
-  line-height: 1.75rem;
-  padding-bottom: 0.75rem;
-  padding-top: 0.75rem;
-}
+  h3 {
+    font-size: large;
+    font-weight: bold;
+    line-height: 1.75rem;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+  }
 
-p {
-  padding-bottom: 0.625rem;
-  padding-top: 0.625rem;
-}
+  p {
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
+  }
 
-li > a {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250/var(--tw-text-opacity));
+  li > a {
+    --tw-text-opacity: 1;
+    color: rgb(96 165 250/var(--tw-text-opacity));
+  }
 }
 </style>

@@ -1,15 +1,11 @@
 <script setup lang='ts'>
-import type { Ref } from 'vue'
-import { ref } from 'vue'
+import orgContributors from '../../orgContributors.json'
 import { filterContributorsData } from '../utils/utils'
-const contributorsArray: Ref<any> = ref(null)
-contributorsArray.value = await fetch('https://raw.githubusercontent.com/PlayCover/PlaySite/master/orgContributors.json').then(response =>
-  response.json(),
-).then(data => data)
-contributorsArray.value = filterContributorsData(contributorsArray.value).filter(contributor => contributor.username != null || contributor.username !== 'weblate')
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-contributorsArray.value = contributorsArray.value.filter((obj, index, arr) => arr.findIndex(t => t.username === obj.username) === index)
+
+// Drop anonymous entries and bots, then de-duplicate people who contributed to several repos.
+const contributorsArray = filterContributorsData(orgContributors)
+  .filter(contributor => contributor.username != null && contributor.username !== 'weblate')
+  .filter((obj, index, arr) => arr.findIndex(t => t.username === obj.username) === index)
 </script>
 
 <template>

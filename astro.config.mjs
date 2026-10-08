@@ -1,16 +1,13 @@
-import { defineConfig } from 'astro/config'
-import vue from '@astrojs/vue'
-import tailwind from '@astrojs/tailwind'
 import mdx from '@astrojs/mdx'
+import vue from '@astrojs/vue'
+import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'astro/config'
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [vue(), tailwind(), mdx()],
   site: 'https://playcover.io/',
+  integrations: [vue(), mdx()],
   vite: {
-    optimizeDeps: {
-      exclude: ['/scripts'],
-    },
-    plugins: [
-    ],
+    plugins: [tailwindcss()],
   },
 })

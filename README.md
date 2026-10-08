@@ -11,6 +11,17 @@ This is a port of the old PlayCover website made with to the new PlaySite using 
 * [Astro](https://astro.build) as web framework
 * [Vue](https://vuejs.org) as frontend UI framework
 * [HeroIcons](https://heroicons.dev) as icon library
-* [VueUse](https://vueuse.org) as library for Vue Composition Utilities
 * [Marked](https://github.com/markedjs/marked) as markdown parser
 * [TailwindCSS](https://tailwindcss.com) as CSS framework
+
+### Development
+
+Requires Node.js 22.12+ (Node 24 LTS recommended, see `.nvmrc`).
+
+```sh
+npm install
+npm run dev      # start the dev server
+npm run build    # production build into dist/
+npm run check    # type-check (.astro, .vue, .ts)
+npm run lint     # eslint (use lint:fix to auto-fix)
+```

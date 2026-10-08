@@ -1,15 +1,11 @@
 <script setup lang='ts'>
-import { type Ref, ref } from 'vue'
+import type { Release as ReleaseData } from '../../interfaces/Release'
+import releases from '../../releases.json'
 import Release from './Release.vue'
 
-const releasesArray: Ref<any> = ref(null)
-releasesArray.value = await fetch('https://raw.githubusercontent.com/PlayCover/PlaySite/master/releases.json').then(response =>
-  response.json(),
-).then(data => data)
+const releasesArray = releases as unknown as ReleaseData[]
 </script>
 
 <template>
   <Release v-for="release in releasesArray" :key="release.node_id" :release="release" />
 </template>
-
-<style></style>

@@ -1,16 +1,16 @@
 ---
+import FeaturedGames from '../components/FeaturedGames.vue'
+import Home from '../components/Home.vue'
 import Layout from '../layouts/Layout.astro';
-import Home from "../components/Home.vue";
-import FeaturedGames from '../components/FeaturedGames.vue';
 ---
 
 <Layout title="PlayCover | Run iOS apps and games on Apple Silicon Mac">
-	<main class="flex-grow h-full">
-		<Home>
-			<FeaturedGames client:load />
-		</Home>
-		<!--  Featured games component as a slot for home and loaded from the client to avoid a "super island" -->
-	</main>
+  <main class="grow h-full">
+    <Home>
+      <FeaturedGames client:load />
+    </Home>
+    <!--  Featured games component as a slot for home and loaded from the client to avoid a "super island" -->
+  </main>
 </Layout>
 
 <style>

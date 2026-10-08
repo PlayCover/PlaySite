@@ -1,28 +1,36 @@
 name: Github Pages Astro CI
 
 on:
-  # Activa el workflow cada vez que hay un push a la rama `main`
-  # ¿Usas un nombre diferente a main? Reemplaza `main` con el nombre de tu rama
   push:
-    branches:
-      - master
-  # Te permite ejecutar este workflow manualmente desde la pestaña Actions en GitHub.
+    branches: [master]
+  # Commits pushed with GITHUB_TOKEN don't trigger other workflows, so rebuild
+  # the site whenever the daily data update finishes.
+  workflow_run:
+    workflows: [update site data]
+    types: [completed]
+    branches: [master]
   workflow_dispatch:
-  
-# Permite clonar el repositorio y desplegar el proyecto
+
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v7          
+        uses: actions/checkout@v7
       - name: Install, build, and upload your site
         uses: withastro/action@v6
+        with:
+          node-version: 24
 
   deploy:
     needs: build
