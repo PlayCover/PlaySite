@@ -1,39 +1,43 @@
 const featuredGames = [
   {
     name: 'Genshin Impact',
-    link: 'https://is4-ssl.mzstatic.com/image/thumb/Purple112/v4/19/65/ec/1965ec30-c2f0-60e8-53ef-796c9d918cd9/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/246x0w.webp',
-  },
-  {
-    name: 'Diablo Immortal',
-    link: 'https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/27/b7/87/27b7872b-2cd4-be39-a931-8f7c114fbe41/AppIcon-1x_U007emarketing-0-10-0-85-220.png/246x0w.webp',
-  },
-  {
-    name: 'Lineage 2M',
-    link: 'https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/f1/43/03/f1430319-f919-20ad-752a-84fb1ed98efb/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp',
-  },
-  {
-    name: 'Shadow Fight Arena',
-    link: 'https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/71/3a/70/713a70ae-e824-21e8-9a21-58f46bd075b7/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp',
-  },
-  {
-    name: 'LoL: Wild Rift',
-    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/17/aa/85/17aa85d7-9b6a-2e3a-5ce8-48ca038034f3/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp',
+    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5c/e2/13/5ce21317-a08a-24ac-cc5f-2b25a4d71fa6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/246x0w.webp',
   },
   {
     name: 'Honkai Impact 3rd',
-    link: 'https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/e5/78/4c/e5784c43-a932-5718-41e5-31f88d652de3/AppIcon-1x_U007emarketing-0-9-0-0-85-220.png/460x0w.webp',
+    link: 'https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/e5/78/4c/e5784c43-a932-5718-41e5-31f88d652de3/AppIcon-1x_U007emarketing-0-9-0-0-85-220.png/246x0w.webp',
   },
   {
-    name: 'Wild Arena Survivors',
-    link: 'https://is3-ssl.mzstatic.com/image/thumb/Purple112/v4/55/a1/b5/55a1b53b-a77b-fa63-48a2-bc580e318374/AppIcon-1x_U007emarketing-0-7-0-85-220.png/246x0w.webp',
+    name: 'Honkai: Star Rail',
+    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/65/dc/fd65dc18-c4b6-7b64-8266-a423f3f113e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.webp',
   },
   {
-    name: 'Vainglory',
-    link: 'https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/cb/77/36/cb773669-2223-ed03-1cfd-cdcc93c16f5e/AppIcon-1x_U007emarketing-0-9-0-85-220.png/246x0w.webp',
+    name: 'Zenless Zone Zero',
+    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2d/4a/fb/2d4afb82-bdb9-cc80-b5b7-d1d7f515b2ae/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/246x0w.webp',
   },
   {
-    name: 'Rocket League Sideswipe',
-    link: 'https://is5-ssl.mzstatic.com/image/thumb/Purple112/v4/31/44/7b/31447b8b-6489-354b-e0db-34c957d50019/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp',
+    name: 'Wuthering Waves',
+    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/07/06/3f/07063f40-1a99-bb82-4a2c-cafa1e145d1d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.webp',
+  },
+  {
+    name: 'Among Us',
+    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/b8/06/06b80694-d4ff-a00e-1e22-9aafd5dd6e2e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.webp',
+  },
+  {
+    name: 'Arknights: Endfield',
+    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/78/36/ec7836d7-d434-6bdd-415e-5bac80a387a6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.webp',
+  },
+  {
+    name: 'Punishing: Gray Raven',
+    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/07/44/4f074499-c049-e0ff-68b1-8029a874f20e/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/246x0w.webp',
+  },
+  {
+    name: 'Limbus Company',
+    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/c9/ce/d4c9cee8-f40e-255f-29da-0833406a4d92/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.webp',
+  },
+  {
+    name: 'Umamusume: Pretty Derby',
+    link: 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8f/35/f4/8f35f477-05cb-0058-944a-0b796ee42583/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.webp',
   },
 ]
 
